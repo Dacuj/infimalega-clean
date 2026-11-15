@@ -1,0 +1,66 @@
+.home-editorial .home-archive {
+  width: min(100%, 54rem);
+  padding: 0 clamp(.75rem, 3vw, 2rem) clamp(2rem, 6vw, 4.5rem);
+}
+
+.home-editorial .home-archive-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .3rem 1rem;
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-block-start: clamp(.85rem, 2.5vw, 1.75rem);
+  border-block-start: 1px solid var(--line);
+}
+
+.home-editorial .home-archive-title {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 2.35rem);
+}
+
+.home-editorial .home-archive-note {
+  max-inline-size: 24ch;
+  color: var(--muted);
+  font: clamp(.64rem, 2.5vw, .8rem) / 1.4 "IBM Plex Mono", monospace;
+  text-align: end;
+}
+
+.home-editorial .home-archive > .archive-poster-flag {
+  width: clamp(5.5rem, 16vw, 10rem);
+  margin: clamp(.5rem, 1.3vw, 1rem) 0 -2px 62%;
+}
+
+.home-editorial .home-archive > .archive-poster {
+  width: min(100%, 50rem);
+  min-height: 26rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.home-editorial .home-archive .archive-poster-reply {
+  max-width: calc(100% - 2 * var(--archive-text-edge));
+}
+
+.home-editorial .home-archive .archive-poster :is(input[type="text"], textarea) {
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.home-editorial .home-archive > .collection-stencil {
+  width: clamp(8rem, 25vw, 12rem);
+  margin: -.35rem auto 0;
+}
+
+#inizio:has(.home-editorial .home-archive) + .site-footer {
+  margin-top: 0;
+  min-height: 0;
+}
+
+@media (max-width: 46rem) {
+  .home-editorial .home-archive > .archive-poster {
+    min-height: 31rem;
+    font-size: .9375rem;
+  }
+}

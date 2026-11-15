@@ -1,0 +1,31 @@
+.blog-document {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--background);
+}
+
+.blog-page {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  justify-items: center;
+  row-gap: clamp(.6rem, 2vh, 1.4rem);
+  height: 100%;
+  padding-top: calc(2.75rem + 2 * clamp(.4rem, 1vw, .9rem) + clamp(.65rem, 3vh, 2rem));
+}
+
+.blog-page h1 {
+  font-size: clamp(1.25rem, 2.6vw, 2.1rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.blog-page .blog-flag {
+  align-self: end;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center bottom;
+}

@@ -1,0 +1,232 @@
+.home-editorial .collections {
+  --gutter: clamp(.8rem, 3.5vw, 2.8rem);
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 74rem);
+}
+
+.home-editorial .collection-index {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  align-items: start;
+  gap: .3rem .8rem;
+  padding-block: clamp(1.3rem, 3.6vw, 3.15rem) .25rem;
+}
+
+.home-editorial .collection-index h2 {
+  padding-block-start: .8rem;
+  font-size: .77rem;
+}
+
+.home-editorial .collection-index-links { justify-content: flex-end; }
+
+.home-editorial .collection-index-links a {
+  font: 500 clamp(.72rem, 2.6vw, .84rem) Inter, "Helvetica Neue", Arial, sans-serif;
+}
+
+.home-editorial .collection {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(.45rem, 2vw, 1.4rem) clamp(.28rem, 1.25vw, .95rem);
+  margin-block: clamp(2rem, 5.8vw, 5.5rem);
+}
+
+.home-editorial .collection-index + .collection { margin-block-start: clamp(1rem, 3.8vw, 3.3rem); }
+
+.home-chapter-copy {
+  grid-area: 1 / 2 / 2 / 6;
+  min-width: 0;
+}
+
+.home-editorial .collection-title {
+  margin: 0 0 .3rem;
+  font-size: clamp(.96rem, 3.2vw, 2.05rem);
+  line-height: 1.07;
+  letter-spacing: -.045em;
+}
+
+.home-editorial .collection-title a { min-block-size: 1.7rem; }
+
+.home-chapter-copy p {
+  max-inline-size: 20ch;
+  color: var(--muted);
+  font-size: clamp(.72rem, 2.5vw, .89rem);
+  line-height: 1.28;
+}
+
+.home-margin-note {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  writing-mode: vertical-rl;
+  font-size: clamp(.62rem, 2.4vw, .72rem);
+  color: var(--muted);
+  letter-spacing: .01em;
+}
+
+.home-editorial .collection > .look-grid {
+  grid-area: 1 / 6 / 2 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.home-editorial .collection > .look-grid > a {
+  grid-area: auto;
+  align-self: start;
+  justify-self: stretch;
+  width: 100%;
+  margin: 0;
+  background: #1a151d;
+}
+
+.home-editorial #amore-tossico > .look-grid { margin-block-start: .6rem; }
+
+.home-editorial #amore-tossico > .runway {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: end;
+  gap: clamp(.45rem, 1.2vw, .8rem);
+  margin-block: .4rem 0;
+}
+
+.home-editorial .runway .collection-film {
+  grid-column: 2 / -1;
+  width: 100%;
+  margin: 0;
+}
+
+.home-editorial [data-home-film],
+.home-editorial [data-home-film] video {
+  border-radius: .375rem;
+}
+
+.home-editorial .runway-menu {
+  grid-column: 2 / span 5;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.home-editorial .look-grid--runway {
+  grid-column: 8 / -1;
+  grid-row: 2;
+  width: min(100%, 10rem);
+  justify-self: end;
+}
+
+.home-editorial .collection--reverse .home-chapter-copy {
+  grid-area: 1 / 8 / 2 / -1;
+  align-self: end;
+}
+
+.home-editorial .collection--reverse > .look-grid { grid-column: 1 / span 7; }
+
+.home-editorial .collection--reverse > .collection-film {
+  grid-column: 2 / span 9;
+  width: 100%;
+  margin: .4rem 0 0;
+}
+
+.home-pair {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(.65rem, 4vw, 2.2rem);
+  padding-block-end: clamp(1.4rem, 5vw, 4.5rem);
+}
+
+.home-editorial .home-pair > .collection {
+  display: block;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+}
+
+.home-editorial .home-pair > .collection--reverse {
+  margin-block-start: clamp(1.05rem, 5vw, 4rem);
+  padding-inline-end: .9rem;
+}
+
+.home-pair .home-margin-note {
+  position: absolute;
+  inset: 0 0 auto auto;
+}
+
+.home-editorial .home-pair .look-grid { margin-block-start: .6rem; }
+
+.home-editorial .home-pair .look-grid--street {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .25rem;
+}
+
+.home-editorial .home-pair .look-grid--street > a:first-child { grid-column: 1 / span 3; }
+
+.home-editorial .home-pair .look-grid--street > a:nth-child(3) {
+  grid-column: 2 / span 2;
+  width: 76%;
+  margin-block-start: .12rem;
+}
+
+.home-editorial .home-pair .stencil-section {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  padding: 0;
+  border: 0;
+}
+
+.home-editorial .home-pair .stencil-morph {
+  position: absolute;
+  inset: auto auto -1rem 3%;
+  width: min(94%, 55rem);
+  margin: 0;
+  transform: rotate(-7deg);
+  opacity: .24;
+  pointer-events: auto;
+}
+
+.home-editorial .home-pair .stencil-morph:focus-visible {
+  opacity: .8;
+  outline-offset: -3px;
+}
+
+@media (max-width: 46rem) {
+  .home-editorial .collection-index-links { justify-content: start; }
+  .home-editorial .collection-index-links a { overflow-wrap: anywhere; }
+}
+
+@media (min-width: 46.01rem) {
+  .home-editorial #amore-tossico > .look-grid {
+    grid-area: 2 / 3 / 3 / 7;
+    max-width: 21rem;
+    margin: 0;
+  }
+  .home-editorial #amore-tossico > .runway { grid-area: 1 / 7 / span 2 / -1; margin: 0; }
+  .home-editorial .runway .collection-film { grid-column: 1 / -1; }
+
+  .home-editorial #cuvee-semaine .home-chapter-copy { grid-area: 1 / 9 / 2 / -1; }
+  .home-editorial #cuvee-semaine > .look-grid {
+    grid-area: 2 / 8 / 3 / -1;
+    max-width: 23rem;
+  }
+
+  .home-editorial #cuvee-semaine > .collection-film {
+    grid-area: 1 / 1 / span 2 / 7;
+    margin: 0;
+  }
+
+  .home-pair {
+    gap: clamp(2rem, 13vw, 10rem);
+    margin-inline: clamp(1.25rem, 6vw, 6rem);
+  }
+
+  .home-editorial .home-pair .look-grid--street { max-width: 20rem; }
+  .home-editorial .home-pair .look-grid--insecto { max-width: 24rem; }
+}

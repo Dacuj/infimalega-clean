@@ -1,0 +1,1296 @@
+{
+  "series": [
+    {
+      "id": "street-study",
+      "name": "Street Study",
+      "year": 2026,
+      "source": "https://www.infimalega.com/series/street-study-2026",
+      "description": "Romantic punk e new wave riletti attraverso colori, forme e trucco degli anni Ottanta. La strada fa da set.",
+      "photos": [
+        {
+          "src": "media/street-study-01.webp",
+          "caption": "INF-020, INF-115",
+          "look": 1,
+          "frame": 1
+        },
+        {
+          "src": "media/street-study-02.webp",
+          "caption": "",
+          "look": 1,
+          "frame": 2
+        },
+        {
+          "src": "media/street-study-03.webp",
+          "caption": "",
+          "look": 1,
+          "frame": 3
+        },
+        {
+          "src": "media/street-study-04.webp",
+          "caption": "INF-047, INF-090, INF-157",
+          "look": 2,
+          "frame": 1
+        },
+        {
+          "src": "media/street-study-05.webp",
+          "caption": "",
+          "look": 2,
+          "frame": 2
+        },
+        {
+          "src": "media/street-study-06.webp",
+          "caption": "",
+          "look": 2,
+          "frame": 3
+        },
+        {
+          "src": "media/street-study-07.webp",
+          "caption": "INF-042, INF-117, INF-158",
+          "look": 3,
+          "frame": 1
+        },
+        {
+          "src": "media/street-study-08.webp",
+          "caption": "",
+          "look": 3,
+          "frame": 2
+        },
+        {
+          "src": "media/street-study-09.webp",
+          "caption": "",
+          "look": 3,
+          "frame": 3
+        },
+        {
+          "src": "media/street-study-10.webp",
+          "caption": "INF-026, INF-088, INF-141",
+          "look": 4,
+          "frame": 1
+        },
+        {
+          "src": "media/street-study-11.webp",
+          "caption": "",
+          "look": 4,
+          "frame": 2
+        },
+        {
+          "src": "media/street-study-12.webp",
+          "caption": "",
+          "look": 4,
+          "frame": 3
+        },
+        {
+          "src": "media/street-study-13.webp",
+          "caption": "INF-032, INF-089",
+          "look": 5,
+          "frame": 1
+        },
+        {
+          "src": "media/street-study-14.webp",
+          "caption": "",
+          "look": 5,
+          "frame": 2
+        },
+        {
+          "src": "media/street-study-15.webp",
+          "caption": "",
+          "look": 5,
+          "frame": 3
+        },
+        {
+          "src": "media/street-study-16.webp",
+          "caption": "INF-024, INF-107",
+          "look": 6,
+          "frame": 1
+        },
+        {
+          "src": "media/street-study-17.webp",
+          "caption": "",
+          "look": 6,
+          "frame": 2
+        },
+        {
+          "src": "media/street-study-18.webp",
+          "caption": "",
+          "look": 6,
+          "frame": 3
+        }
+      ]
+    },
+    {
+      "id": "amore-tossico",
+      "name": "Amore Tossico",
+      "year": 2026,
+      "source": "https://www.infimalega.com/series/amore-tossico-2026",
+      "description": "Una famiglia senza legami di sangue. Cotone avorio macchiato, maniche a sbuffo irregolari e braccia sempre coperte.",
+      "photos": [
+        {
+          "src": "media/amore-tossico-01.webp",
+          "caption": "INF-018, INF-075, INF-137",
+          "look": 1,
+          "frame": 1
+        },
+        {
+          "src": "media/amore-tossico-02.webp",
+          "caption": "INF-018, INF-074, INF-122",
+          "look": 1,
+          "frame": 2
+        },
+        {
+          "src": "media/amore-tossico-03.webp",
+          "caption": "INF-018, INF-074, INF-122",
+          "look": 1,
+          "frame": 3
+        },
+        {
+          "src": "media/amore-tossico-04.webp",
+          "caption": "INF-019, INF-106",
+          "look": 2,
+          "frame": 1
+        },
+        {
+          "src": "media/amore-tossico-05.webp",
+          "caption": "INF-092, INF-019",
+          "look": 2,
+          "frame": 2
+        },
+        {
+          "src": "media/amore-tossico-06.webp",
+          "caption": "INF-092, INF-019",
+          "look": 2,
+          "frame": 3
+        },
+        {
+          "src": "media/amore-tossico-07.webp",
+          "caption": "INF-020, INF-067",
+          "look": 3,
+          "frame": 1
+        },
+        {
+          "src": "media/amore-tossico-08.webp",
+          "caption": "INF-063, INF-020",
+          "look": 3,
+          "frame": 2
+        },
+        {
+          "src": "media/amore-tossico-09.webp",
+          "caption": "INF-063, INF-020",
+          "look": 3,
+          "frame": 3
+        },
+        {
+          "src": "media/amore-tossico-10.webp",
+          "caption": "INF-043, INF-082",
+          "look": 4,
+          "frame": 1
+        },
+        {
+          "src": "media/amore-tossico-11.webp",
+          "caption": "INF-041, INF-078",
+          "look": 4,
+          "frame": 2
+        },
+        {
+          "src": "media/amore-tossico-12.webp",
+          "caption": "INF-041, INF-078",
+          "look": 4,
+          "frame": 3
+        },
+        {
+          "src": "media/amore-tossico-13.webp",
+          "caption": "INF-042, INF-080, INF-114",
+          "look": 5,
+          "frame": 1
+        },
+        {
+          "src": "media/amore-tossico-14.webp",
+          "caption": "INF-040, INF-076, INF-100",
+          "look": 5,
+          "frame": 2
+        },
+        {
+          "src": "media/amore-tossico-15.webp",
+          "caption": "INF-040, INF-076, INF-100",
+          "look": 5,
+          "frame": 3
+        },
+        {
+          "src": "media/amore-tossico-16.webp",
+          "caption": "INF-044, INF-081",
+          "look": 6,
+          "frame": 1
+        },
+        {
+          "src": "media/amore-tossico-17.webp",
+          "caption": "INF-042, INF-077",
+          "look": 6,
+          "frame": 2
+        },
+        {
+          "src": "media/amore-tossico-18.webp",
+          "caption": "INF-042, INF-077",
+          "look": 6,
+          "frame": 3
+        }
+      ]
+    },
+    {
+      "id": "insecto",
+      "name": "Insecto",
+      "year": 2025,
+      "source": "https://www.infimalega.com/series/insecto-2025",
+      "description": "Un piccolo circo in disfacimento. Righe rosse, pois e volumi da costume di scena portano lo spettacolo fino alla corrosione.",
+      "photos": [
+        {
+          "src": "media/insecto-01.webp",
+          "caption": "INF-039, INF-105",
+          "look": 1,
+          "frame": 1
+        },
+        {
+          "src": "media/insecto-02.webp",
+          "caption": "INF-037, INF-091",
+          "look": 1,
+          "frame": 2
+        },
+        {
+          "src": "media/insecto-03.webp",
+          "caption": "INF-037, INF-091",
+          "look": 1,
+          "frame": 3
+        },
+        {
+          "src": "media/insecto-04.webp",
+          "caption": "INF-014, INF-136",
+          "look": 2,
+          "frame": 1
+        },
+        {
+          "src": "media/insecto-05.webp",
+          "caption": "INF-014, INF-121",
+          "look": 2,
+          "frame": 2
+        },
+        {
+          "src": "media/insecto-06.webp",
+          "caption": "INF-014, INF-121",
+          "look": 2,
+          "frame": 3
+        },
+        {
+          "src": "media/insecto-07.webp",
+          "caption": "INF-016, INF-104",
+          "look": 3,
+          "frame": 1
+        },
+        {
+          "src": "media/insecto-08.webp",
+          "caption": "INF-016, INF-090",
+          "look": 3,
+          "frame": 2
+        },
+        {
+          "src": "media/insecto-09.webp",
+          "caption": "INF-016, INF-090",
+          "look": 3,
+          "frame": 3
+        },
+        {
+          "src": "media/insecto-10.webp",
+          "caption": "INF-015, INF-066, INF-150",
+          "look": 4,
+          "frame": 1
+        },
+        {
+          "src": "media/insecto-11.webp",
+          "caption": "INF-015, INF-090, INF-134",
+          "look": 4,
+          "frame": 2
+        },
+        {
+          "src": "media/insecto-12.webp",
+          "caption": "INF-015, INF-090, INF-134",
+          "look": 4,
+          "frame": 3
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "INF-146",
+      "archiveName": "Sleepy Shirt",
+      "archiveYear": 2026,
+      "materials": "Cotton, Iron",
+      "source": "https://www.infimalega.com/archive#h.hq5i6twta8i5",
+      "statusSource": "https://www.infimalega.com/inf-146",
+      "name": "Sleepy Shirt",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "Cotton & Aluminium",
+      "origin": "Naples",
+      "status": "Available",
+      "shop": "https://www.vinted.it/items/10548908884-11-asymmetrical-sleep-chemise-l-xl",
+      "src": "media/shop-archive/inf-146-cover-3354da197cb2.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-146-cover-3354da197cb2.webp",
+        "width": 652,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-146-01-2fd0ea651fe9.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-146-02-7da0c9f40319.webp",
+          "width": 1350,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-130",
+      "archiveName": "3shirts Longsleeve",
+      "archiveYear": 2026,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.8dqfebay1wxu",
+      "statusSource": "https://www.infimalega.com/inf-130",
+      "name": "3Shirts Longsleeve",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "100% Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Available",
+      "shop": "https://www.vinted.it/items/10489894608-11-reconstructed-longsleeve-with-3-shirts",
+      "src": "media/shop-archive/inf-130-cover-0059ac66372f.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-130-cover-0059ac66372f.webp",
+        "width": 647,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-130-01-e287c35f1a8c.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-130-02-c03f316a6337.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-130-03-8b875c3f6050.webp",
+          "width": 1350,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-164",
+      "archiveName": "Personal Trench",
+      "archiveYear": 2026,
+      "materials": "Cotton, Nylon, Denim",
+      "source": "https://www.infimalega.com/archive#h.5ykfdymtnol2",
+      "statusSource": "https://www.infimalega.com/inf-164",
+      "name": "Personal Trench",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "Cotton, Nylon, Acrylic & Denim",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-164-cover-517b1b487d5b.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-164-cover-517b1b487d5b.webp",
+        "width": 649,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-164-01-8c61d2f5597e.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-164-02-aaedc8e8d057.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-164-03-f323c1744656.webp",
+          "width": 1350,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-160",
+      "archiveName": "crew! Waistcoat",
+      "archiveYear": 2026,
+      "materials": "Polyester, Cotton, Iron",
+      "source": "https://www.infimalega.com/archive#h.8lmb7i5x8xu2",
+      "statusSource": "https://www.infimalega.com/inf-160",
+      "name": "crew! Waistcoat",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "Cotton, Aluminum & Polyester",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-160-cover-2cd439622dd6.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-160-cover-2cd439622dd6.webp",
+        "width": 652,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-160-01-a50d49b69d93.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-160-02-f4943edcee69.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-162",
+      "archiveName": "01 Haori Overcoat",
+      "archiveYear": 2026,
+      "materials": "Cotton, Nylon",
+      "source": "https://www.infimalega.com/archive#h.a6t6ejp88odd",
+      "statusSource": "https://www.infimalega.com/inf-162",
+      "name": "01 Haori Overcoat",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "Cotton & Nylon",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-162-cover-f48c1cc9e8cb.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-162-cover-f48c1cc9e8cb.webp",
+        "width": 649,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-162-01-971a41b36ed9.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-162-02-e36e61bd70e7.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-162-03-80fa7d1d034b.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-107",
+      "archiveName": "Shrunken Boi",
+      "archiveYear": 2026,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.pvvmz96dbnpt",
+      "statusSource": "https://www.infimalega.com/inf-107",
+      "name": "Shrunken Boy Longsleeve",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "100% Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-107-cover-56469b6de009.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-107-cover-56469b6de009.webp",
+        "width": 648,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-107-01-e4f3ddd79bb3.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-107-02-0f5a8371f2d8.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-107-03-3883c8099d4a.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-143",
+      "archiveName": "scarecrow!",
+      "archiveYear": 2026,
+      "materials": "Cotton, Flannel",
+      "source": "https://www.infimalega.com/archive#h.css98h1uks1",
+      "statusSource": "https://www.infimalega.com/inf-143",
+      "name": "Scarecrow Chemise",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "100% Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Available",
+      "shop": "https://www.vinted.it/items/9338978527-11-oversize-deconstructed-chemise-xl",
+      "src": "media/shop-archive/inf-143-cover-2214d804ce89.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-143-cover-2214d804ce89.webp",
+        "width": 691,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-143-01-fd0b238692c5.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-143-02-95291779db83.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-143-03-db5463c4e047.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-118",
+      "archiveName": "MM Longsleeve",
+      "archiveYear": 2026,
+      "materials": "Cotton, Viscose, Polyester",
+      "source": "https://www.infimalega.com/archive#h.3xzz1o5ilcu2",
+      "statusSource": "https://www.infimalega.com/inf-118",
+      "name": "MM Longsleeve",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "Cotton, Viscose & Polyester",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-118-cover-ce3e4e37281c.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-118-cover-ce3e4e37281c.webp",
+        "width": 693,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-118-01-563db8d2b666.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-118-02-819ab0bd4168.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-028",
+      "archiveName": "Ethiopian Capri",
+      "archiveYear": 2026,
+      "materials": "Cotton, Nylon",
+      "source": "https://www.infimalega.com/archive#h.iriyjoletate",
+      "statusSource": "https://www.infimalega.com/inf-028",
+      "name": "Ethiopians",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "Cotton, Aluminium & Nylon",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-028-cover-a7ae37d0b884.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-028-cover-a7ae37d0b884.webp",
+        "width": 693,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-028-01-e6a897c5ab79.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-028-02-6976933ff304.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-158",
+      "archiveName": "Tartan Kimono",
+      "archiveYear": 2026,
+      "materials": "Cotton, Flannel",
+      "source": "https://www.infimalega.com/archive#h.gvj7tc2y7f3",
+      "statusSource": "https://www.infimalega.com/inf-158",
+      "name": "Tartan Kimono",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "Cotton & Flannel",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-158-cover-c8622ccd5172.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-158-cover-c8622ccd5172.webp",
+        "width": 691,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-158-01-f6880edc1ee4.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-158-02-a2f6a5964c84.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-057",
+      "archiveName": "MM skirt",
+      "archiveYear": 2026,
+      "materials": "Cotton, Polyester",
+      "source": "https://www.infimalega.com/archive#h.umvecce9cylc",
+      "statusSource": "https://www.infimalega.com/inf-057",
+      "name": "MM Modular Skirt",
+      "year": 2026,
+      "series": "A Massimiliano",
+      "detailMaterials": "Cotton & Polyester",
+      "origin": "Naples",
+      "status": "Available",
+      "shop": "https://www.vinted.fr/items/9400847647-11-deconstructed-skirt-overskirt-m",
+      "src": "media/shop-archive/inf-057-cover-3a206703cd60.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-057-cover-3a206703cd60.webp",
+        "width": 693,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-057-01-1baffaa8584c.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-057-02-6791c02ce9df.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-057-03-41ce672bb2b1.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-117",
+      "archiveName": "Clint Longsleeve",
+      "archiveYear": 2026,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.tq5ew48juvz2",
+      "statusSource": "https://www.infimalega.com/inf-117",
+      "name": "Clint Longsleeve",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "100% Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-117-cover-fc559793760c.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-117-cover-fc559793760c.webp",
+        "width": 693,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-117-01-edc587fd864b.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-117-02-13cb9f02ad9b.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-176",
+      "archiveName": "Kingdom Hat",
+      "archiveYear": 2024,
+      "materials": "Cotton, Denim, Buttons",
+      "source": "https://www.infimalega.com/archive#h.ialtkee87fun",
+      "statusSource": "https://www.infimalega.com/inf-176",
+      "name": "Kingdom Hat",
+      "year": 2024,
+      "series": "Unassigned",
+      "detailMaterials": "Reclaimed Cotton, Denim & Buttons",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-176-cover-1d61db0b7e0e.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-176-cover-1d61db0b7e0e.webp",
+        "width": 900,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-176-01-35b03dfffe66.webp",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-176-02-cbe50cabb915.webp",
+          "width": 1800,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-182",
+      "archiveName": "Mista Skimask",
+      "archiveYear": 2025,
+      "materials": "Polyester, Denim",
+      "source": "https://www.infimalega.com/archive#h.1v75at9t5dil",
+      "statusSource": "https://www.infimalega.com/inf-193",
+      "name": "Mista Skimask",
+      "year": 2025,
+      "series": "Unassigned",
+      "detailMaterials": "Reclaimed Denim & Polyester",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-182-cover-dce6d40bda80.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-182-cover-dce6d40bda80.webp",
+        "width": 900,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-182-01-d4cfb62785ab.webp",
+          "width": 1602,
+          "height": 1800
+        }
+      ],
+      "detailId": "INF-193"
+    },
+    {
+      "id": "INF-203",
+      "archiveName": "This is not a belt!",
+      "archiveYear": 2026,
+      "materials": "Cotton, Iron, Aluminum",
+      "source": "https://www.infimalega.com/archive#h.x8fl7dylyw69",
+      "statusSource": "https://www.infimalega.com/inf-203",
+      "name": "This is not a belt!",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "100 % Reclaimed Cotton, Iron & Aluminum",
+      "origin": "Naples",
+      "status": "Available",
+      "shop": "https://www.vinted.it/items/8477139673-11-reclaimed-waist-belt-m-l",
+      "src": "media/shop-archive/inf-203-cover-03137420ac2d.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-203-cover-03137420ac2d.webp",
+        "width": 899,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-203-01-0eff9cdddc88.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-203-02-8662b49b5f28.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-157",
+      "archiveName": "die punk! Jacket",
+      "archiveYear": 2026,
+      "materials": "Cotton, Cordura, Aluminum",
+      "source": "https://www.infimalega.com/archive#h.qfd3lz4897ec",
+      "statusSource": "https://www.infimalega.com/inf-157",
+      "name": "die punk! Jacket",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "Cotton, Cordura, Aluminum & Polyester",
+      "origin": "Naples",
+      "status": "Available",
+      "shop": "https://www.vinted.it/items/8469655603-11-asymmetrical-camo-jacket-l",
+      "src": "media/shop-archive/inf-157-cover-616ba88118e5.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-157-cover-616ba88118e5.webp",
+        "width": 671,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-157-01-ac592fbf0e10.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-157-02-20edfefb1754.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-157-03-8675ad5e356d.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-157-04-eed6fca57ee5.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-050",
+      "archiveName": "Curtain skirt",
+      "archiveYear": 2025,
+      "materials": "Cotton, Silk",
+      "source": "https://www.infimalega.com/archive#h.cx6f0tciiloe",
+      "statusSource": "https://www.infimalega.com/inf-050",
+      "name": "Curtain Skirt",
+      "year": 2025,
+      "series": "Amore Tossico",
+      "detailMaterials": "100 % Reclaimed Cotton & Silk",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-050-cover-f66e77a3b5e2.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-050-cover-f66e77a3b5e2.webp",
+        "width": 672,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-050-01-a28abfbf6823.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-050-02-d1752452e9a2.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-050-03-688825fb4a02.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-104",
+      "archiveName": "3 types of white",
+      "archiveYear": 2026,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.sjhwm2sbcb9b",
+      "statusSource": "https://www.infimalega.com/inf-139",
+      "name": "3 types of white",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "100 % Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-104-cover-658b4d20d2b6.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-104-cover-658b4d20d2b6.webp",
+        "width": 672,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-104-01-09ee11e2156e.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-104-02-e787ca398afb.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ],
+      "detailId": "INF-139"
+    },
+    {
+      "id": "INF-142",
+      "archiveName": "Garage Chemise",
+      "archiveYear": 2026,
+      "materials": "Cotton, Polyester",
+      "source": "https://www.infimalega.com/archive#h.56wv9s8jrud0",
+      "statusSource": "https://www.infimalega.com/inf-142",
+      "name": "Garage Chemise",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "Cotton & Polyester",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-142-cover-a8aa67d7b698.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-142-cover-a8aa67d7b698.webp",
+        "width": 734,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-142-01-83b8daa83499.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-142-02-03b5095c2ec4.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-142-03-e81621cf527a.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-102",
+      "archiveName": "NotToday Hoodie",
+      "archiveYear": 2026,
+      "materials": "Cotton, Aluminum",
+      "source": "https://www.infimalega.com/archive#h.gnanhs5egl6a",
+      "statusSource": "https://www.infimalega.com/inf-102",
+      "name": "NotToday Hoodie",
+      "year": 2026,
+      "series": "Unassigned",
+      "detailMaterials": "100% Reclaimed Cotton & Aluminum Eyelets",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-102-cover-a9c082c5c8f2.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-102-cover-a9c082c5c8f2.webp",
+        "width": 736,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-102-01-6fb933f4cea1.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-102-02-9e98c1c75533.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-102-03-4eede348bc11.webp",
+          "width": 1350,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-092",
+      "archiveName": "Rabbit Sweater",
+      "archiveYear": 2025,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.q2ouc1iwbcug",
+      "statusSource": "https://www.infimalega.com/inf-092",
+      "name": "Rabbit Sweater",
+      "year": 2025,
+      "series": "Amore Tossico",
+      "detailMaterials": "100% Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-092-cover-099f83ce1f7f.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-092-cover-099f83ce1f7f.webp",
+        "width": 734,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-092-01-2679c2f993a8.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-092-02-92728237fe77.webp",
+          "width": 1350,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-092-03-7d3c645c8b71.webp",
+          "width": 1350,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-140",
+      "archiveName": "Stracciocamicia",
+      "archiveYear": 2025,
+      "materials": "Cotton, Polyester",
+      "source": "https://www.infimalega.com/archive#h.hgkg1iasm0n8",
+      "statusSource": "https://www.infimalega.com/inf-140",
+      "name": "Stracciocamicia",
+      "year": 2025,
+      "series": "Insecto",
+      "detailMaterials": "Reclaimed Cotton & Polyester",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-140-cover-4c8e13f1285e.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-140-cover-4c8e13f1285e.webp",
+        "width": 695,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-140-01-b805a2c316e2.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-140-02-2e224d608c73.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-139",
+      "archiveName": "Gemini Chemise",
+      "archiveYear": 2025,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.urq8ph3uainq",
+      "statusSource": "https://www.infimalega.com/inf-104",
+      "name": "Gemini Chemise",
+      "year": 2025,
+      "series": "Insecto",
+      "detailMaterials": "100 % Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-139-cover-267ce0c58490.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-139-cover-267ce0c58490.webp",
+        "width": 693,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-139-01-e657eff58c0a.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-139-02-79bedfcbbd76.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-139-03-9968524ba9a3.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ],
+      "detailId": "INF-104"
+    },
+    {
+      "id": "INF-156",
+      "archiveName": "Ancient Regime",
+      "archiveYear": 2024,
+      "materials": "Cotton, Polyester, Acrylic",
+      "source": "https://www.infimalega.com/archive#h.m29oaofxngge",
+      "statusSource": "https://www.infimalega.com/inf-156",
+      "name": "Ancient Regime",
+      "year": 2024,
+      "series": "Unassigned",
+      "detailMaterials": "Reclaimed Cotton, Polyester & Acrylic",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-156-cover-0a038f6956bd.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-156-cover-0a038f6956bd.webp",
+        "width": 695,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-156-01-70a4e866c08b.webp",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-156-02-e66358da2322.webp",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-156-03-10432da94977.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-093",
+      "archiveName": "white! longsleeve",
+      "archiveYear": 2025,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.ir34zjkiss70",
+      "statusSource": "https://www.infimalega.com/inf-082",
+      "name": "white! longsleeve",
+      "year": 2025,
+      "series": "Amore Tossico",
+      "detailMaterials": "100% Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-093-cover-258b5d1b4235.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-093-cover-258b5d1b4235.webp",
+        "width": 696,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-093-01-057fc9a0b1fc.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-093-02-7a08ae323022.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-093-03-53ea54444ef8.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ],
+      "detailId": "INF-082"
+    },
+    {
+      "id": "INF-099",
+      "archiveName": "family! longsleeve",
+      "archiveYear": 2026,
+      "materials": "100% Reclaimed Cotton",
+      "source": "https://www.infimalega.com/archive#h.dpsu08frr7og",
+      "statusSource": "https://www.infimalega.com/inf-099",
+      "name": "family! longsleeve",
+      "year": 2026,
+      "series": "Amore Tossico",
+      "detailMaterials": "100 % Reclaimed Cotton",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-099-cover-4c3ea020937b.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-099-cover-4c3ea020937b.webp",
+        "width": 696,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-099-01-3004239915f9.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-099-02-edde64865ef9.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-099-03-d48f9aca741e.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "id": "INF-078",
+      "archiveName": "ragby! longsleeve",
+      "archiveYear": 2025,
+      "materials": "Cotton, Polyester, Paint",
+      "source": "https://www.infimalega.com/archive#h.wbbunw1k4l41",
+      "statusSource": "https://www.infimalega.com/inf-078",
+      "name": "ragby! longsleeve",
+      "year": 2025,
+      "series": "Amore Tossico",
+      "detailMaterials": "Reclaimed Cotton, Polyester & Paint",
+      "origin": "Naples",
+      "status": "Archived",
+      "shop": null,
+      "src": "media/shop-archive/inf-078-cover-b2e8baa0b15e.webp",
+      "cover": {
+        "src": "media/shop-archive/inf-078-cover-b2e8baa0b15e.webp",
+        "width": 693,
+        "height": 900
+      },
+      "statusPhotos": [
+        {
+          "src": "media/shop-archive/inf-078-01-1585785721b8.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-078-02-b383a3678c92.webp",
+          "width": 1349,
+          "height": 1800
+        },
+        {
+          "src": "media/shop-archive/inf-078-03-91951dc2f8fd.webp",
+          "width": 1349,
+          "height": 1800
+        }
+      ]
+    }
+  ]
+}
