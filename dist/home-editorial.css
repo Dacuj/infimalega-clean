@@ -184,10 +184,9 @@
 
 .home-editorial .home-pair .stencil-morph {
   position: absolute;
-  inset: auto auto -1rem 3%;
+  inset: auto auto 0 3%;
   width: min(94%, 55rem);
   margin: 0;
-  transform: rotate(-7deg);
   opacity: .24;
   pointer-events: auto;
 }
