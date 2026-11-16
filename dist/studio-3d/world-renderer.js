@@ -45,8 +45,10 @@ export function createWorldRenderer(items, onDirty) {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x080609);
   const entries = new Map(items.map((item) => [item.id, { item }]));
+  const opening = [...entries.values()].slice(0, 3);
   const cameraWorld = new THREE.Vector3();
   let active = [];
+  let preloadOpening;
   let loading;
   let size;
   let presented = false;
@@ -77,9 +79,24 @@ export function createWorldRenderer(items, onDirty) {
   function startNextLoad() {
     if (loading || contextLost || !active.length) return;
     const next = presented
-      ? [...active, ...entries.values()].find((entry) => !entry.mesh && !entry.failed)
+      ? [...(preloadOpening ? opening : []), ...active, ...entries.values()]
+        .find((entry) => !entry.mesh && !entry.failed)
       : active.find((entry) => !entry.failed);
     if (next && !next.mesh) void load(next);
+  }
+
+  function updateLoadProgress(entry, { loaded, total }) {
+    const expected = total || entry.item.bytes;
+    if (!(expected > 0)) return;
+    const progress = .9 * THREE.MathUtils.clamp(loaded / expected, 0, 1);
+    if (!(progress > (entry.loadProgress ?? 0))) return;
+
+    entry.loadProgress = progress;
+    const now = performance.now();
+    if (progress === .9 || now - (entry.progressReportedAt ?? -Infinity) >= 100) {
+      entry.progressReportedAt = now;
+      onDirty();
+    }
   }
 
   async function load(entry) {
@@ -93,6 +110,7 @@ export function createWorldRenderer(items, onDirty) {
         editable: false,
         raycastable: false,
         objectModifier: entry.aperture?.modifier,
+        onProgress: (event) => updateLoadProgress(entry, event),
       });
       await mesh.initialized;
 
@@ -119,6 +137,11 @@ export function createWorldRenderer(items, onDirty) {
     return Boolean(entries.get(item?.id)?.mesh);
   }
 
+  function getLoadProgress(item) {
+    const entry = entries.get(item?.id);
+    return entry?.mesh ? 1 : (entry?.loadProgress ?? 0);
+  }
+
   function hasFailed(item) {
     return Boolean(entries.get(item?.id)?.failed);
   }
@@ -127,6 +150,7 @@ export function createWorldRenderer(items, onDirty) {
     if (!size || contextLost) return false;
 
     active = [...new Set(activeItems.map(({ id }) => entries.get(id)).filter(Boolean))].slice(0, 3);
+    if (active.length) preloadOpening ??= active[0] === opening[0];
     startNextLoad();
 
     const visible = active.filter((entry) => entry.mesh);
@@ -165,5 +189,5 @@ export function createWorldRenderer(items, onDirty) {
     onDirty();
   });
 
-  return { canvas, resize, render, hasFailed, hasLoaded };
+  return { canvas, resize, render, hasFailed, hasLoaded, getLoadProgress };
 }

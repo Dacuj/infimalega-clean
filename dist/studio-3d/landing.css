@@ -1,3 +1,54 @@
+:root { scrollbar-gutter: stable; }
+:root.walk-booting { overflow: hidden; overscroll-behavior: none; }
+
+.walk-loader { display: none; }
+
+.walk-booting .walk-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 1.8rem;
+  background: #080609;
+  touch-action: none;
+  perspective: 12rem;
+}
+
+.walk-loader > * {
+  opacity: 0;
+  animation: walk-loader-reveal .14s .2s both;
+}
+
+.walk-loader img {
+  inline-size: 4.35rem;
+  filter: brightness(0) invert(1);
+  animation: walk-loader-reveal .14s .2s both, walk-loader-spin 1.9s steps(32) infinite;
+}
+
+.walk-loader progress {
+  appearance: none;
+  inline-size: clamp(8.5rem, 35vw, 11rem);
+  block-size: .25rem;
+  background: #342f35;
+  border: 0;
+  color: var(--ink);
+}
+
+.walk-loader progress::-webkit-progress-bar { background: #342f35; }
+.walk-loader progress::-webkit-progress-value { background: var(--ink); }
+.walk-loader progress::-moz-progress-bar { background: var(--ink); }
+
+@keyframes walk-loader-reveal {
+  to { opacity: 1; }
+}
+
+@keyframes walk-loader-spin {
+  from { transform: rotateY(0turn) rotateZ(-8deg); }
+  to { transform: rotateY(1turn) rotateZ(-8deg); }
+}
+
 .walk-header {
   position: fixed;
   z-index: 12;
@@ -371,6 +422,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .walk-booting .walk-loader { display: none; }
+  :root.walk-booting { overflow: visible; }
   .walk-chapter { min-height: 100svh; }
   .walk-stage { position: relative; }
 }

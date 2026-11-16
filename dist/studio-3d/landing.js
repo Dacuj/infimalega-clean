@@ -1,5 +1,8 @@
 import { CatmullRomCurve3, PerspectiveCamera, Vector3, MathUtils } from "three";
 
+const root = document.documentElement;
+const loadProgress = document.querySelector("#studio-load-progress");
+const pageContents = document.querySelectorAll("body > header, body > main, body > footer");
 const route = document.querySelector(".walk-route");
 const screen = route.querySelector(".walk-screen");
 const chapters = [...route.querySelectorAll(".walk-chapter")];
@@ -82,11 +85,29 @@ for (const chapter of chapters) {
   chapter.style.setProperty("--focus-y", Number(chapter.dataset.focusY) * 100 + "%");
 }
 
+if (root.classList.contains("walk-booting")) {
+  for (const element of pageContents) element.inert = true;
+}
+
+function finishLoading() {
+  root.classList.remove("walk-booting");
+  for (const element of pageContents) element.inert = false;
+}
+
 function showPhotographs() {
-  document.documentElement.classList.remove("walk-loading");
+  finishLoading();
+  root.classList.remove("walk-loading");
   route.classList.remove("has-depth", "is-active");
   screen.hidden = true;
 }
+
+window.addEventListener("studio-load-timeout", () => {
+  if (screen.hasAttribute("data-ready")) finishLoading();
+  else showPhotographs();
+});
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) finishLoading();
+});
 
 function start() {
   run().catch((error) => {
@@ -103,13 +124,13 @@ reducedMotion.addEventListener("change", (event) => {
 
 async function run() {
   const [{ createWorldRenderer }, metadata] = await Promise.all([
-    import("./world-renderer.js"),
-    fetch("./sharp-scenes/index.json").then((response) => {
+    import("./world-renderer.js?v=studio-loading"),
+    fetch("./sharp-scenes/index.json?v=studio-loading").then((response) => {
       if (!response.ok) throw new Error("Apple SHARP scene manifest is unavailable");
       return response.json();
     }),
   ]);
-  if (reducedMotion.matches) return;
+  if (reducedMotion.matches || root.classList.contains("walk-load-timeout")) return;
 
   const items = chapters.map((chapter) => {
     const item = metadata.find(({ id }) => id === chapter.dataset.scene);
@@ -117,6 +138,7 @@ async function run() {
     const { center: [x, y, depth], aperture } = scenes[item.id];
     return { ...item, center: new Vector3(x, y, -depth), aperture };
   });
+  const introScenes = items.slice(0, 3);
   const { path, gaze } = makeFlight(items);
   const camera = new PerspectiveCamera(44, 1, .025, 125);
   const target = new Vector3();
@@ -151,6 +173,7 @@ async function run() {
     const visible = rect.top < screenHeight * .55 && rect.bottom > screenHeight * .60;
     route.classList.toggle("is-active", visible);
     if (!visible || !screenHeight) {
+      if (!visible && screenHeight && root.classList.contains("walk-booting")) finishLoading();
       visibleScroll = undefined;
       drawnAt = undefined;
       return;
@@ -192,6 +215,7 @@ async function run() {
       return !previous || camera.position.z < previous.center.z - scenes[previous.id].captionExit;
     });
     const current = items[caption];
+    const booting = root.classList.contains("walk-booting");
     if (renderer.hasFailed(current)) {
       showPhotographs();
       return;
@@ -201,9 +225,16 @@ async function run() {
       return item !== current && ahead > -1.05 && ahead < 2.85;
     });
     const active = [current, ...adjacent];
-    if (renderer.render(camera, active)) {
-      document.documentElement.classList.remove("walk-loading");
+    const hasFrame = renderer.render(camera, active);
+    if (hasFrame) {
+      root.classList.remove("walk-loading");
       screen.dataset.ready = "";
+    }
+    if (booting) {
+      const progress = introScenes.reduce((sum, scene) => sum + renderer.getLoadProgress(scene), 0);
+      loadProgress.value = Math.floor(97 * progress / introScenes.length + (hasFrame ? 3 : 0));
+      const openingSettled = introScenes.every((scene) => renderer.hasLoaded(scene) || renderer.hasFailed(scene));
+      if (hasFrame && openingSettled) finishLoading();
     }
 
     for (const [position, chapter] of chapters.entries()) {

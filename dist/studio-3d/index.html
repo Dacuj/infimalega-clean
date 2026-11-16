@@ -10,20 +10,35 @@
   <link rel="stylesheet" href="../portfolio.css">
   <link rel="stylesheet" href="../archive-poster.css">
   <link rel="stylesheet" href="../home-archive-editorial.css">
-  <link rel="stylesheet" href="landing.css?v=mobile-viewport">
+  <link rel="stylesheet" href="landing.css?v=studio-loading">
   <script type="importmap">
     { "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/" } }
   </script>
   <script src="../logo-3d.js" defer></script>
   <script>
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      document.documentElement.classList.add("walk-loading");
+      const root = document.documentElement;
+      root.classList.add("walk-loading");
+      const returning = performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+      if (!returning && (!location.hash || location.hash === "#inizio")) {
+        root.classList.add("walk-booting");
+        setTimeout(() => {
+          if (!root.classList.contains("walk-booting")) return;
+          root.classList.add("walk-load-timeout");
+          root.classList.remove("walk-loading", "walk-booting");
+          window.dispatchEvent(new Event("studio-load-timeout"));
+        }, 45000);
+      }
     }
   </script>
-  <script src="landing.js" type="module" onerror="document.documentElement.classList.remove('walk-loading')"></script>
+  <script src="landing.js?v=studio-loading" type="module" onerror="document.documentElement.classList.remove('walk-loading', 'walk-booting')"></script>
   <script src="editorial.js" type="module"></script>
 </head>
 <body>
+  <div class="walk-loader">
+    <img src="../media/portfolio/croce.png" alt="" width="280" height="279" draggable="false">
+    <progress id="studio-load-progress" max="100" value="0" aria-label="Caricamento Studio 3D"></progress>
+  </div>
   <header class="site-header walk-header">
     <a class="site-mark" href="#inizio" aria-label="Infimalega, torna all’inizio">
       <img src="../media/portfolio/croce.png" alt="" width="280" height="279" draggable="false">
