@@ -152,6 +152,10 @@ async function run() {
 
   screen.append(renderer.canvas);
   showScreen();
+  if (location.hash === "#archive" || location.hash === "#contatti") {
+    // The 3D layout extends the last chapter after the browser resolves the anchor.
+    document.getElementById(location.hash.slice(1)).scrollIntoView({ behavior: "instant" });
+  }
 
   function showScreen() {
     screen.hidden = false;
