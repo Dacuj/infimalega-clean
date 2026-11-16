@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0d0a0f">
+  <title>Infimalega · Studio 3D</title>
+  <link rel="icon" href="../media/portfolio/croce.png">
+  <link rel="stylesheet" href="../portfolio.css">
+  <link rel="stylesheet" href="../archive-poster.css">
+  <link rel="stylesheet" href="../home-archive-editorial.css">
+  <link rel="stylesheet" href="landing.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/" } }
+  </script>
+  <script src="../logo-3d.js" defer></script>
+  <script>
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("walk-loading");
+    }
+  </script>
+  <script src="landing.js" type="module" onerror="document.documentElement.classList.remove('walk-loading')"></script>
+  <script src="editorial.js" type="module"></script>
+</head>
+<body>
+  <header class="site-header walk-header">
+    <a class="site-mark" href="#inizio" aria-label="Infimalega, torna all’inizio">
+      <img src="../media/portfolio/croce.png" alt="" width="280" height="279" draggable="false">
+    </a>
+    <nav class="site-nav" aria-label="Navigazione principale">
+      <a href="../about.html">About</a>
+      <a href="#archive">Archive</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+  <main id="inizio">
+    <h1 class="visually-hidden">Infimalega</h1>
+    <div class="walk-route">
+      <div class="walk-screen" aria-hidden="true" hidden></div>
+      <div class="walk-chapters">
+        <section id="amore-tossico" class="walk-chapter" data-scene="amore" data-focus-x=".52" data-focus-y=".28">
+          <div id="attraversa" class="walk-entry" aria-hidden="true"></div>
+          <div class="walk-stage">
+            <img class="walk-photo" src="../media/portfolio/amore-02.webp" alt="" width="1088" height="1360" fetchpriority="high" draggable="false">
+            <div class="walk-caption">
+              <h2><a href="../amore-tossico.html">Amore Tossico<span aria-hidden="true">↗</span></a></h2>
+              <a class="walk-scroll" href="#attraversa">Scorri <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <div class="walk-editorial walk-editorial--amore">
+            <div class="walk-note walk-note--amore" lang="en">
+              <p class="walk-margin">Proximity without lineage</p>
+              <p>Off-white cotton, intentionally stained</p>
+            </div>
+            <div class="walk-insert walk-insert--amore-photos">
+              <a class="walk-diptych" href="../amore-tossico.html#lookbook">
+                <img src="../media/portfolio/amore-03.webp" alt="Ritratto con trucco rosso e bocca aperta" width="1088" height="1360" loading="lazy" decoding="async" draggable="false">
+                <img src="../media/portfolio/amore-01.webp" alt="Il gruppo di Amore Tossico fra le tende rosse" width="1440" height="1800" loading="lazy" decoding="async" draggable="false">
+              </a>
+            </div>
+            <figure class="walk-insert walk-insert--amore-prints">
+              <a class="walk-prints walk-prints--wide" href="../amore-tossico.html#lookbook">
+                <img src="../media/amore-tossico-10.webp" alt="Figura in avorio con le braccia aperte sul palco" width="1200" height="1499" loading="lazy" decoding="async" draggable="false">
+                <img src="../media/portfolio/runway-extra-10.webp" alt="Adesivi e capi Infimalega sul tavolo a quadri rossi" width="1440" height="960" loading="lazy" decoding="async" draggable="false">
+              </a>
+              <figcaption class="walk-story" lang="en">A non-biological family.</figcaption>
+            </figure>
+            <figure class="walk-insert walk-insert--amore-film" data-walk-film>
+              <video src="editorial/amore-loop.mp4" poster="../media/portfolio/amore-tossico-film.jpg" width="512" height="288" muted loop playsinline preload="none" disablepictureinpicture aria-label="Estratto dal film di Amore Tossico"></video>
+              <figcaption>
+                <a href="../amore-tossico.html#amore-film">A Short Story ↗</a>
+                <button type="button" data-walk-play hidden>Riproduci</button>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="cuvee-semaine" class="walk-chapter" data-scene="cuvee" data-focus-x=".5" data-focus-y=".47">
+          <div class="walk-stage">
+            <img class="walk-photo" src="sharp-scenes/cuvee-film-poster.webp" alt="" width="1450" height="1080" loading="lazy" decoding="async" draggable="false">
+            <div class="walk-caption">
+              <h2><a href="../cuvee-semaine.html">Cuvée Semaine<span aria-hidden="true">↗</span></a></h2>
+            </div>
+          </div>
+          <div class="walk-editorial walk-editorial--cuvee">
+            <figure class="walk-insert walk-insert--cuvee-film" data-walk-film>
+              <video src="editorial/cuvee-loop.mp4" poster="../media/portfolio/cuvee-semaine-film.jpg" width="512" height="382" muted loop playsinline preload="none" disablepictureinpicture aria-label="Estratto dal film di Cuvée Semaine"></video>
+              <figcaption>
+                <a href="../cuvee-semaine.html#cuvee-semaine-film">Film ↗</a>
+                <button type="button" data-walk-play hidden>Riproduci</button>
+              </figcaption>
+            </figure>
+            <a class="walk-insert walk-insert--cuvee-look" href="../cuvee-semaine.html#lookbook">
+              <img src="../media/portfolio/cuvee-02.webp" alt="Retro del capo con stampa grafica" width="1020" height="1360" loading="lazy" decoding="async" draggable="false">
+            </a>
+            <figure class="walk-insert walk-insert--cuvee-prints">
+              <a class="walk-prints" href="../cuvee-semaine.html#lookbook">
+                <img src="../media/editorial/cuvee-06.webp" alt="Berretto blu e maglia bianca davanti ai tessuti appesi" width="960" height="1440" loading="lazy" decoding="async" draggable="false">
+                <img src="../media/editorial/cuvee-07.webp" alt="Lo stesso look di spalle, con guanti rossi incrociati" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+              </a>
+              <figcaption class="walk-story">Lookbook · Outfit 03</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="street-study" class="walk-chapter" data-scene="street" data-focus-x=".73" data-focus-y=".5">
+          <div class="walk-stage">
+            <img class="walk-photo" src="../media/portfolio/street-01.webp" alt="" width="1800" height="1200" loading="lazy" decoding="async" draggable="false">
+            <div class="walk-caption">
+              <h2><a href="../street-study.html">Street Study<span aria-hidden="true">↗</span></a></h2>
+            </div>
+          </div>
+          <div class="walk-editorial walk-editorial--street">
+            <a class="walk-insert walk-insert--street-photos walk-diptych" href="../street-study.html#lookbook">
+              <img src="../media/portfolio/street-02.webp" alt="Primo piano con trucco acceso intorno agli occhi" width="1088" height="1360" loading="lazy" decoding="async" draggable="false">
+              <img src="../media/portfolio/street-03.webp" alt="Look a figura intera contro uno sfondo rosso" width="1088" height="1360" loading="lazy" decoding="async" draggable="false">
+            </a>
+            <p class="walk-note walk-note--street walk-margin" lang="en">Romantic punk in the urban land.</p>
+            <figure class="walk-insert walk-insert--street-prints">
+              <a class="walk-prints walk-prints--wide" href="../street-study.html#lookbook">
+                <img src="../media/street-study-02.webp" alt="Chiavi e catenelle appuntate a una giacca grigia" width="1200" height="1500" loading="lazy" decoding="async" draggable="false">
+                <img src="../media/street-study-16.webp" alt="Figura in camicia azzurra fra i panni stesi" width="1200" height="1500" loading="lazy" decoding="async" draggable="false">
+              </a>
+              <figcaption class="walk-story" lang="en">Each piece exists as a singular 1/1 archive unit.</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="insecto" class="walk-chapter" data-scene="insecto" data-focus-x=".5" data-focus-y=".24">
+          <div class="walk-stage">
+            <img class="walk-photo" src="../media/editorial/insecto-12.webp" alt="" width="960" height="1440" loading="lazy" decoding="async" draggable="false">
+            <div class="walk-caption">
+              <h2><a href="../insecto.html">Insecto<span aria-hidden="true">↗</span></a></h2>
+            </div>
+          </div>
+          <div class="walk-editorial walk-editorial--insecto">
+            <p class="walk-note walk-note--insecto walk-margin" lang="en">Vertical red striping</p>
+            <figure class="walk-insert walk-insert--insecto-photos">
+              <a class="walk-insecto-photos" href="../insecto.html#lookbook">
+                <img src="../media/editorial/insecto-06.webp" alt="Figura in camicia bianca davanti alle righe rosse" width="960" height="1440" loading="lazy" decoding="async" draggable="false">
+                <img src="../media/editorial/insecto-07.webp" alt="Due figure contro il telo a righe" width="960" height="1440" loading="lazy" decoding="async" draggable="false">
+              </a>
+              <figcaption lang="en">Spectacle as structural corrosion</figcaption>
+            </figure>
+            <figure class="walk-insert walk-insert--insecto-prints">
+              <a class="walk-prints walk-prints--wide" href="../insecto.html#lookbook">
+                <img src="../media/editorial/insecto-04.webp" alt="Figura dal viso dipinto di bianco distesa sul pavimento a scacchi" width="1600" height="1067" loading="lazy" decoding="async" draggable="false">
+                <img src="../media/editorial/insecto-11.webp" alt="Il gruppo Insecto sul tetto davanti a una facciata rosa" width="1600" height="1067" loading="lazy" decoding="async" draggable="false">
+              </a>
+              <figcaption class="walk-story" lang="en">A small circus formation in progressive decay.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="archive" class="home-editorial walk-archive">
+      <section class="home-archive" aria-labelledby="home-archive-title">
+        <header class="home-archive-intro">
+          <h2 class="home-archive-title" id="home-archive-title"><a class="home-title-link" href="../shop.html">Archive<span class="home-title-arrow" aria-hidden="true"></span></a></h2>
+          <p class="home-archive-note" lang="en">1/1 UNBUILT ANTI-FASHION — NAPLES 2024</p>
+        </header>
+        <a id="infimalega-bandiera" class="archive-poster-flag" href="../shop.html" aria-label="Apri Archive dalla bandiera Infimalega" draggable="false">
+          <img src="../media/portfolio/bandiera-infimalega.webp" width="1085" height="1715" alt="Bandiera Infimalega in stoffa rossa e blu, legata a una struttura di rami" loading="lazy" fetchpriority="low" decoding="async" draggable="false">
+        </a>
+        <section id="archive-poster" class="archive-poster" aria-label="Archive">
+          <a class="archive-poster-images" href="../shop.html" aria-label="Apri Archive" draggable="false">
+            <img draggable="false" src="../media/portfolio/archive-print.webp" width="1280" height="1280" alt="" loading="lazy" fetchpriority="low" decoding="async">
+            <img draggable="false" src="../media/portfolio/archive-print.webp" width="1280" height="1280" alt="" loading="lazy" fetchpriority="low" decoding="async">
+          </a>
+          <div class="archive-poster-front" lang="en">
+            <div class="archive-poster-prompt">
+              Still looking?<br>
+              Seeing double?<br>
+              <label>Yes <input type="radio" name="vista"></label>
+              <label>Maybe twice <input type="radio" name="vista"></label><br>
+              <label>Which piece was it?<br><input type="text" size="20" form="archive-poster-form" autocomplete="off"></label>
+            </div>
+            <a class="archive-poster-corner" href="../shop.html">Archive<br>1/1 pieces</a>
+            <form id="archive-poster-form" class="archive-poster-form" action="../shop.html" method="get" autocomplete="off">
+              <div class="archive-poster-reply">
+                <label>Still thinking<br>about it?<br><textarea rows="3" cols="20"></textarea></label><br>
+                <label>piece <input type="text" size="15"></label><br>
+                <label>size <input type="text" size="15"></label><br>
+                <small>See if it’s still there.</small><br>
+                <span class="archive-poster-control"><input type="submit" value="ENTER"></span>
+              </div>
+            </form>
+            <a class="archive-poster-thumb" href="../shop.html" draggable="false">
+              <img draggable="false" src="../media/portfolio/archive-print.webp" width="40" height="36" alt="" loading="lazy" fetchpriority="low">
+              Take another look
+            </a>
+          </div>
+        </section>
+
+        <a id="infimalega-stencil" class="collection-stencil" href="../shop.html" aria-label="Apri Archive dal telo Infimalega" draggable="false">
+          <img draggable="false" src="../media/portfolio/footer-tela-inferiore.webp?v=avorio" alt="Tela avorio con due scritte Infimalega serigrafate" width="825" height="682" loading="lazy" fetchpriority="low" decoding="async">
+        </a>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer" id="contatti">
+    <div class="footer-links">
+      <h2>Contatti</h2>
+      <a href="mailto:infimalega@gmail.com">Email</a>
+      <a href="https://www.instagram.com/infimalega/" rel="external">Instagram</a>
+      <a href="../blog.html">Blog</a>
+      <img class="footer-label" draggable="false" src="../media/portfolio/footer-etichetta.webp" alt="Etichetta Infimalega" width="384" height="245" loading="lazy" fetchpriority="low" decoding="async">
+    </div>
+  </footer>
+</body>
+</html>

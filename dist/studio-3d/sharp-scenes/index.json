@@ -1,0 +1,68 @@
+[
+  {
+    "id": "amore",
+    "src": "sharp-scenes/amore.spz",
+    "poster": "../media/portfolio/amore-02.webp",
+    "width": 1088,
+    "height": 1360,
+    "focalLength": 1207.616821,
+    "focalHeight": 0.88795355,
+    "centerDepth": 0.889405,
+    "depthRange": [
+      0.626637,
+      1.606144
+    ],
+    "pointCount": 1179556,
+    "reconstruction": "Apple SHARP"
+  },
+  {
+    "id": "cuvee",
+    "src": "sharp-scenes/cuvee.spz",
+    "poster": "sharp-scenes/cuvee-film-poster.webp",
+    "width": 1450,
+    "height": 1080,
+    "focalLength": 1253.629395,
+    "focalHeight": 1.16076796,
+    "centerDepth": 2.813724,
+    "depthRange": [
+      1.800401,
+      3.515237
+    ],
+    "pointCount": 1179485,
+    "reconstruction": "Apple SHARP",
+    "sourceFilm": "../media/portfolio/cuvee-semaine-film.mp4",
+    "sourceTime": 5.2
+  },
+  {
+    "id": "street",
+    "src": "sharp-scenes/street.spz",
+    "poster": "../media/portfolio/street-01.webp",
+    "width": 1800,
+    "height": 1200,
+    "focalLength": 1500.0,
+    "focalHeight": 1.25,
+    "centerDepth": 3.417389,
+    "depthRange": [
+      2.023581,
+      5.829203
+    ],
+    "pointCount": 1179617,
+    "reconstruction": "Apple SHARP"
+  },
+  {
+    "id": "insecto",
+    "src": "sharp-scenes/insecto.spz",
+    "poster": "../media/editorial/insecto-12.webp",
+    "width": 960,
+    "height": 1440,
+    "focalLength": 1200.0,
+    "focalHeight": 0.83333333,
+    "centerDepth": 0.953133,
+    "depthRange": [
+      0.697895,
+      63.864691
+    ],
+    "pointCount": 1179642,
+    "reconstruction": "Apple SHARP"
+  }
+]

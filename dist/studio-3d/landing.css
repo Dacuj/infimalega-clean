@@ -1,0 +1,354 @@
+.walk-header {
+  position: fixed;
+  z-index: 12;
+  pointer-events: none;
+}
+
+.walk-header a { pointer-events: auto; }
+
+.walk-route { isolation: isolate; background: #080609; }
+.walk-chapter { position: relative; min-height: 168svh; }
+.walk-chapter:focus-within { z-index: 1; }
+.walk-entry { position: absolute; top: 62svh; }
+
+.walk-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #080609;
+}
+
+.walk-photo, .walk-screen canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.walk-photo {
+  object-fit: cover;
+  object-position: var(--focus-x, 50%) var(--focus-y, 50%);
+}
+
+.walk-loading .walk-photo,
+.has-depth .walk-photo { visibility: hidden; }
+
+.walk-route.has-depth {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.has-depth .walk-screen,
+.has-depth .walk-chapters { grid-area: 1 / 1; }
+
+.has-depth .walk-screen {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100svh;
+  overflow: hidden;
+  background: #080609;
+}
+
+.has-depth .walk-chapters {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+.has-depth .walk-chapter:last-child { min-height: 250svh; }
+.has-depth :is(.walk-caption, .walk-editorial) :is(a, button) { pointer-events: auto; }
+
+.has-depth .walk-stage {
+  position: static;
+  height: 0;
+  overflow: visible;
+  isolation: auto;
+  background: transparent;
+}
+
+.has-depth .walk-caption {
+  position: fixed;
+  visibility: hidden;
+}
+
+.has-depth.is-active .is-caption .walk-caption,
+.has-depth .walk-caption:focus-within { visibility: visible; }
+
+.walk-route:not(.has-depth) .walk-stage::after,
+.walk-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.walk-route:not(.has-depth) .walk-stage::after {
+  background: linear-gradient(180deg, rgb(0 0 0 / .35), transparent 23%, transparent 54%, rgb(0 0 0 / .84));
+}
+
+.walk-screen::after {
+  background: linear-gradient(180deg, rgb(0 0 0 / .25), transparent 20%, transparent 58%, rgb(0 0 0 / .49));
+}
+
+.walk-caption {
+  position: absolute;
+  inset: auto var(--gutter) clamp(2.8rem, 8vh, 6rem);
+  z-index: 2;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.walk-caption h2 {
+  font-size: clamp(2.55rem, 7.6vw, 8.75rem);
+  font-weight: 600;
+  letter-spacing: -.075em;
+  line-height: .91;
+}
+
+.walk-caption h2 a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .22em;
+}
+
+.walk-caption h2 span {
+  font-size: .32em;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.walk-scroll {
+  flex: none;
+  align-self: end;
+  white-space: nowrap;
+  font-size: .82rem;
+}
+
+.walk-scroll span { margin-inline-start: .25rem; }
+#amore-tossico .walk-caption { justify-content: flex-start; }
+.has-depth:not(.has-start-cue) .walk-scroll { visibility: hidden; }
+
+.walk-editorial {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem var(--gutter);
+}
+
+.has-depth .walk-editorial {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  padding: 0;
+}
+
+.has-depth .walk-editorial > * {
+  position: absolute;
+  top: var(--at);
+}
+
+.walk-note {
+  max-inline-size: 8rem;
+  inline-size: max-content;
+  color: var(--ink);
+  font: .72rem/1.45 "IBM Plex Mono", monospace;
+  text-shadow: 0 1px 6px #080609, 0 0 2px #080609;
+}
+
+.walk-margin {
+  writing-mode: vertical-rl;
+  max-inline-size: none;
+  white-space: nowrap;
+  font-size: .66rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.walk-note--amore {
+  --at: 54svh;
+  inset-inline-start: var(--gutter);
+  display: flex;
+  align-items: start;
+  gap: .65rem;
+}
+
+.walk-note--amore > :last-child { max-inline-size: 7rem; }
+.walk-note--street { --at: 100svh; right: var(--gutter); }
+.walk-note--insecto { --at: 101svh; left: var(--gutter); }
+
+:is(.walk-note--street, .walk-note--insecto) {
+  padding: .3rem .15rem;
+  background: #080609d9;
+}
+
+.walk-insert {
+  margin: 0;
+  inline-size: var(--span);
+  min-inline-size: 0;
+}
+
+.walk-insert :is(img, video) {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  background: #080609;
+  box-shadow: 0 .2rem 1.2rem #0005;
+}
+
+.walk-insert video { object-fit: cover; }
+
+.walk-insert figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 .5rem;
+  align-items: center;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  margin-block-start: .2rem;
+  padding: .2rem .35rem;
+  background: #080609e6;
+  font: clamp(.63rem, .88vw, .71rem)/1.35 "IBM Plex Mono", monospace;
+}
+
+.walk-insert figcaption a:hover,
+.walk-insert figcaption button:hover { text-decoration: underline; }
+
+.walk-insert figcaption button {
+  min-block-size: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+}
+
+.walk-diptych,
+.walk-insecto-photos {
+  display: grid;
+  gap: .38rem;
+}
+
+.walk-diptych {
+  grid-template-columns: 1fr .81fr;
+  align-items: end;
+}
+
+.walk-insert--amore-photos {
+  --at: 93svh;
+  --span: clamp(7rem, 20vw, 17rem);
+  inset-inline-end: max(var(--gutter), 6vw);
+  justify-self: end;
+}
+
+.walk-insert--amore-film {
+  --at: 207svh;
+  --span: clamp(7.75rem, 17vw, 15rem);
+  inset-inline-end: var(--gutter);
+  justify-self: end;
+}
+
+.walk-insert--cuvee-film {
+  --at: 127svh;
+  --span: clamp(8rem, 19vw, 16rem);
+  inset-inline-end: max(var(--gutter), 7vw);
+  justify-self: end;
+}
+
+.walk-insert--cuvee-look {
+  --at: 150svh;
+  --span: clamp(3rem, 7.2vw, 7rem);
+  inset-inline-start: var(--gutter);
+}
+
+.walk-insert--street-photos {
+  --at: 113svh;
+  --span: clamp(7rem, 19vw, 15rem);
+  inset-inline-start: var(--gutter);
+}
+
+.walk-insert--insecto-photos {
+  --at: 111svh;
+  --span: clamp(6rem, 13vw, 11rem);
+  inset-inline-end: max(var(--gutter), 7vw);
+  justify-self: end;
+}
+
+.walk-insecto-photos {
+  grid-template-columns: 1fr .65fr;
+  align-items: start;
+}
+
+.walk-insecto-photos > :last-child { margin-block-start: 38%; }
+
+.walk-prints {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: .3rem;
+}
+
+.walk-prints img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.walk-prints--wide img { aspect-ratio: 3 / 2; }
+
+.walk-insert figcaption.walk-story {
+  display: block;
+  padding: .35rem .45rem;
+  font: 500 clamp(.68rem, 1.05vw, .9rem)/1.27 Inter, sans-serif;
+  letter-spacing: -.01em;
+}
+
+.walk-insert--amore-prints {
+  --at: 152svh;
+  --span: min(clamp(8rem, 23vw, 19rem), 40svh);
+  inset-inline-start: var(--gutter);
+}
+
+.walk-insert--cuvee-prints {
+  --at: 181svh;
+  --span: min(clamp(7rem, 17vw, 14rem), 33svh);
+  inset-inline-start: max(var(--gutter), 6vw);
+}
+
+.walk-insert--street-prints {
+  --at: 147svh;
+  --span: min(clamp(8rem, 20vw, 16rem), 38svh);
+  inset-inline-end: max(var(--gutter), 8vw);
+  justify-self: end;
+}
+
+.walk-insert--insecto-prints {
+  --at: 156svh;
+  --span: min(clamp(9rem, 23vw, 18rem), 40svh);
+  inset-inline-start: var(--gutter);
+}
+
+.walk-archive {
+  padding-top: clamp(3rem, 10vw, 8rem);
+}
+
+@media (max-width: 46rem) {
+  .walk-caption { align-items: start; flex-direction: column; }
+  .walk-scroll { align-self: start; }
+  .walk-note--amore {
+    max-inline-size: 5.75rem;
+    gap: .4rem;
+  }
+  .walk-note--amore > :last-child { font-size: .61rem; }
+  .walk-insert--amore-photos { --span: min(33vw, 9rem); }
+  .walk-insert--street-photos { --span: min(31vw, 9rem); }
+  .walk-insert--cuvee-look { --at: 141svh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walk-chapter { min-height: 100svh; }
+  .walk-stage { position: relative; }
+}
