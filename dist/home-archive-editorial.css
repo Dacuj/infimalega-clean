@@ -58,6 +58,14 @@
   min-height: 0;
 }
 
+@media (min-width: 60rem) and (hover: hover) and (pointer: fine) {
+  .home-editorial .home-archive > .archive-poster {
+    --archive-poster-width: calc(100cqw - 2 * clamp(1rem, 2vw, 2.5rem));
+    width: var(--archive-poster-width);
+    margin-inline: calc((100% - var(--archive-poster-width)) / 2);
+  }
+}
+
 @media (max-width: 46rem) {
   .home-editorial .home-archive > .archive-poster {
     min-height: 31rem;

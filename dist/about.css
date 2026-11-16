@@ -1,0 +1,73 @@
+.about-document {
+  background: #000;
+}
+
+.about-page {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: repeating-linear-gradient(#00ee00 0 2px, #000 2px 4px);
+}
+
+.about-frame {
+  width: min(82.45vw, 800px, calc(100dvh * 10 / 7));
+  aspect-ratio: 10 / 7;
+  overflow: auto;
+  overscroll-behavior: contain;
+  container-type: inline-size;
+  background: #000;
+  color: #00ff00;
+  color-scheme: light;
+  font: bold 24px/normal Courier, "Courier New", monospace;
+}
+
+.about-frame:focus-visible {
+  outline: 1px dotted #00ff00;
+  outline-offset: 0;
+}
+
+.about-sheet {
+  width: max-content;
+  min-width: 125%;
+  padding-bottom: 9cqw;
+  font-size: max(.52rem, 3cqw);
+}
+
+.about-print {
+  width: 44cqw;
+  margin: 1cqw 0 0 1cqw;
+  background: #00ff00;
+}
+
+.about-print img {
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+}
+
+.about-sheet h1 {
+  width: 100cqw;
+  margin: 1cqw 0 0;
+  text-align: center;
+  font-size: 6cqw;
+}
+
+.about-sheet pre {
+  margin: 1em 0 0;
+  font: inherit;
+}
+
+@media (max-width: 60rem) {
+  .about-page {
+    background: repeating-linear-gradient(to bottom,
+      #076d07 0 1px, #147f13 1px 2px, #117b10 2px 3px, #006500 3px 4px,
+      #006d00 4px 5px, #108312 5px 6px, #148514 6px 7px, #087508 7px 9px,
+      #006300 9px 11px, #087309 11px 12px, #168916 12px 13px,
+      #0b780b 13px 14px, #006600 14px 15px, #006e01 15px 16px,
+      #0e7d0e 16px 17px, #087408 17px 19px);
+  }
+}
+
+@media (max-width: 46rem) {
+  .about-frame { aspect-ratio: 296 / 204; }
+}

@@ -55,8 +55,6 @@ def document(name, title, class_name, content, *, styles=("site.css",), script=N
     icon = f'<link rel="icon" type="image/png" href="{favicon}">\n' if favicon else ""
     css = "\n".join(f'<link rel="stylesheet" href="{source}">' for source in styles)
     js = f'<script src="{script}" defer></script>' if script else ""
-    if class_name in {"editorial-page", "shop-page"}:
-        js += '<script src="about.js?v=plain" defer></script>'
     (OUTPUT / name).write_text(f"""<!doctype html>
 <html lang="it">
 <head>
@@ -122,7 +120,7 @@ def portfolio_header(*, shop_current=False):
   </a>
   <nav class="site-nav" aria-label="Navigazione principale">
     <a href="shop.html"{current}>Archive</a>
-    <a href="about.html" data-about-link>About</a>
+    <a href="about.html">About</a>
     <a href="index.html#contatti">Contatti</a>
   </nav>
 </header>"""
@@ -130,19 +128,41 @@ def portfolio_header(*, shop_current=False):
 EDITORIAL_BACK = '<a class="editorial-back" href="index.html#collezioni"><span aria-hidden="true">←</span> Collezioni</a>'
 
 document("about.html", "About", "about-document", """
-<main class="about-page" aria-label="About">
-  <a class="site-mark about-mark" href="index.html" aria-label="Infimalega, torna alla home">
+<header class="site-header">
+  <a class="site-mark" href="index.html" aria-label="Infimalega, torna alla home">
     <img draggable="false" src="media/portfolio/croce.png" alt="" width="280" height="279">
   </a>
-  <a class="about-nav-link about-collections" href="index.html#collezioni">Collezioni</a>
-  <div class="about-frame">
-    <video src="media/portfolio/about-infimalega.mp4" poster="media/portfolio/about-infimalega.jpg"
-      width="960" height="720" autoplay loop playsinline preload="metadata" disablepictureinpicture
-      disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" draggable="false"
-      aria-label="Infimalega, video About"></video>
-  </div>
-  <a class="about-nav-link about-archive" href="shop.html">Archivio</a>
-</main>""", styles=("portfolio.css",), script="about.js?v=plain", favicon="media/portfolio/croce.png")
+</header>
+<main class="about-page" aria-labelledby="about-title">
+  <section class="about-frame" tabindex="0" lang="en" aria-labelledby="about-title">
+    <div class="about-sheet">
+      <div class="about-print" aria-hidden="true">
+        <img src="media/portfolio/footer-etichetta.webp" alt="" width="384" height="245" draggable="false">
+      </div>
+      <h1 id="about-title">INFIMALEGA</h1>
+      <pre>
+       |PROJECT|   2024, Naples
+
+    Experimental fashion project
+        exploring anti-fashion aesthetics
+      and the garment as a one-of-one object.
+
+             1|1 PRODUCTION                        ARCHIVE
+
+           Unique pieces become part
+      of a growing archive.
+
+
+                     STORYTELLING
+        Editorials, small independent fashion shows
+   and digital communication.
+
+              Fashion, underground culture
+                    and visual identity.
+</pre>
+    </div>
+  </section>
+</main>""", styles=("portfolio.css?v=mobile-balance", "about.css?v=goodtimes"), favicon="media/portfolio/croce.png", theme_color="#007100")
 
 PHOTO_VIEWER = """<dialog class="viewer" aria-labelledby="viewer-title">
   <div class="viewer-toolbar">
