@@ -11,10 +11,16 @@
 .walk-chapter:focus-within { z-index: 1; }
 .walk-entry { position: absolute; top: 62svh; }
 
+.walk-stage,
+.has-depth .walk-screen {
+  height: 100svh;
+  /* Keep the scene tall enough when the mobile browser retracts its controls. */
+  height: 100lvh;
+}
+
 .walk-stage {
   position: sticky;
   top: 0;
-  height: 100svh;
   overflow: hidden;
   isolation: isolate;
   background: #080609;
@@ -48,7 +54,6 @@
   position: sticky;
   top: 0;
   align-self: start;
-  height: 100svh;
   overflow: hidden;
   background: #080609;
 }
@@ -117,20 +122,37 @@
   gap: .22em;
 }
 
-.walk-caption h2 span {
-  font-size: .32em;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
 .walk-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
   flex: none;
   align-self: end;
   white-space: nowrap;
   font-size: .82rem;
 }
 
-.walk-scroll span { margin-inline-start: .25rem; }
+.walk-caption h2 .home-title-arrow,
+.walk-scroll .home-title-arrow,
+.walk-insert figcaption .home-title-arrow { color: inherit; }
+
+.walk-scroll .home-title-arrow,
+.walk-insert figcaption .home-title-arrow {
+  display: inline-block;
+  top: 0;
+  width: .45em;
+  height: .45em;
+  border-width: 1px;
+  vertical-align: .13em;
+}
+
+.walk-scroll .home-title-arrow::after,
+.walk-insert figcaption .home-title-arrow::after {
+  width: .61em;
+  height: 1px;
+}
+
+.walk-scroll .home-title-arrow { transform: rotate(135deg); }
 #amore-tossico .walk-caption { justify-content: flex-start; }
 .has-depth:not(.has-start-cue) .walk-scroll { visibility: hidden; }
 
